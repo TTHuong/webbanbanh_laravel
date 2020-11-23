@@ -50,7 +50,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Mô Tả </label>
-                        <textarea class="form-control" name="description" rows="5" placeholder="bánh a là ....."></textarea>
+                        <textarea class="ckeditor form-control" name="description" rows="5" placeholder="bánh a là ....."></textarea>
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlInput1">Đơn Giá </label>

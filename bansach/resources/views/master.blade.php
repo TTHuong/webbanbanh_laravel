@@ -42,6 +42,18 @@
     <!--customjs-->
     <script src="source/assets/dest/js/custom2.js"></script>
     <script src="https://kit.fontawesome.com/b01339b628.js" crossorigin="anonymous"></script>
+    <script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.ckeditor').ckeditor();
+        });
+    </script>
+    <script type="text/javascript">
+        CKEDITOR.replace('wysiwyg-editor', {
+            filebrowserUploadUrl: "{{route('ckeditor.image-upload', ['_token' => csrf_token() ])}}",
+            filebrowserUploadMethod: 'form'
+        });
+    </script>
     <script>
         $(document).ready(function($) {
             $(window).scroll(function() {
